@@ -1,54 +1,59 @@
-
-x64/
-x86/
-Debug/
-Release/
-DebugPublic/
-Releases/
-ipch/
-
+# Visual Studio
 .vs/
-*.vcxproj*
-*.sln
-*.pdb
-*.idb
-*.ipch
-*.opendb
-*.tlog
-*.lastbuildstate
 *.VC.db
 *.VC.opendb
 
-*.exe
-*.dll
-*.lib
-*.app
-*.out
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
+# Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+
+# Visual C++ cache
+ipch/
+*.ipch
+
+# C++ build artifacts
 *.obj
-*.o
 *.pch
 *.pdb
+*.idb
 *.ilk
-*.res
-*.exp
+*.tlog
+*.log
+*.lastbuildstate
 
+# Executables
+*.exe
+*.out
+
+# Libraries
+*.lib
+*.dll
+*.a
+
+# CMake (if used)
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
 Makefile
-install_manifest.txt
 compile_commands.json
 
-.DS_Store
-Thumbs.db
-
+# Temporary files
 *.tmp
-*.log
+*.temp
 *.cache
-*.swp
-*.swo
 
-.idea/
-*.iml
-cmake-build-*/
+# OS files
+Thumbs.db
+ehthumbs.db
+.DS_Store
