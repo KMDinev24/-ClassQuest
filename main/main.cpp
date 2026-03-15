@@ -1,4 +1,5 @@
-#include <iostream>
+п»ї#include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -33,98 +34,203 @@ int main() {
     else {
         cout << "Invalid main option selected." << endl;
     }
-        // ---------------- ФИЗИКА ----------------
-        cout << "=== ФИЗИКА ===\n\n";
 
-        cout << "1. Какво е дрейфова скорост?\n";
-        cout << "A) Хаотично движение\nB) Насочено движение на електроните\nC) Движение на йоните\n";
-        cout << "Отговор: B\n\n";
+    int choice;
+    string answer;
 
-        cout << "2. Защо съпротивлението на металите нараства при нагряване?\n";
-        cout << "A) Броят на електроните намалява\nB) Йоните трептят по-силно\nC) Металът се охлажда\n";
-        cout << "Отговор: B\n\n";
+    // If user chose "Test" in the first menu, skip the subject prompt once
+    bool skipPrompt = false;
+    if (mainChoice >= 1 && mainChoice <= 3 && (subChoice == 'b' || subChoice == 'B')) {
+        skipPrompt = true;
+        // map: initial menu 1=Biology,2=Chemistry,3=Physics
+        // test-menu expects 1=Physics,2=Chemistry,3=Biology
+        if (mainChoice == 1) choice = 3;
+        else if (mainChoice == 2) choice = 2;
+        else /* mainChoice == 3 */ choice = 1;
+    }
 
-        cout << "3. Какво показва увеличаването на специфичното съпротивление при температура?\n";
-        cout << "A) Съпротивлението намалява\nB) Металът става свръхпроводник\nC) Съпротивлението се увеличава\n";
-        cout << "Отговор: C\n\n";
+    while (true) {
+        if (!skipPrompt) {
+            cout << "\n=== SUBJECT MENU ===\n";
+            cout << "1. Physics\n";
+            cout << "2. Chemistry\n";
+            cout << "3. Biology\n";
+            cout << "4. Exit\n";
+            cout << "Choose a subject: ";
+            cin >> choice;
+        }
+        else {
+            // only skip the prompt once
+            skipPrompt = false;
+        }
 
-        cout << "4. Какво става със съпротивлението при критичната температура Tk?\n";
-        cout << "A) Увеличава се\nB) Остава същото\nC) Става нула\n";
-        cout << "Отговор: C\n\n";
+        if (choice == 4) {
+            cout << "Exiting program...\n";
+            break;
+        }
 
-        cout << "5. Къде се използват свръхпроводници?\n";
-        cout << "A) В микровълнови печки\nB) В магнитни томографи (MRI)\nC) В телевизори\n";
-        cout << "Отговор: B\n\n";
+        // ---------------- PHYSICS ----------------
+        if (choice == 1) {
+            cout << "\n=== PHYSICS TEST ===\n\n";
 
-        cout << "6. Какво отличава високотемпературните свръхпроводници?\n";
-        cout << "A) Работят при по-висока температура\nB) Не провеждат ток\nC) Имат отрицателно съпротивление\n";
-        cout << "Отговор: A\n\n";
+            cout << "1. What is drift velocity?\n";
+            cout << "A) Random motion\nB) Directed movement of electrons\nC) Movement of ions\n";
+            cout << "Answer: ";
+            cin >> answer;
+            if (answer == "B" || answer == "b") cout << "true\n\n";
+            else cout << "false\nIncorrect. Correct answer: B) Directed movement of electrons\n\n";
 
+            cout << "2. Why does the resistance of metals increase when heated?\n";
+            cout << "A) Number of electrons decreases\nB) Ions vibrate more strongly\nC) The metal cools down\n";
+            cout << "Answer: ";
+            cin >> answer;
+            if (answer == "B" || answer == "b") cout << "true\n\n";
+            else cout << "false\nIncorrect. Correct answer: B) Ions vibrate more strongly\n\n";
 
-        // ---------------- ХИМИЯ ----------------
-        cout << "=== ХИМИЯ ===\n\n";
+            cout << "3. What does the increase of specific resistance with temperature show?\n";
+            cout << "A) Resistance decreases\nB) Metal becomes superconductive\nC) Resistance increases\n";
+            cout << "Answer: ";
+            cin >> answer;
+            if (answer == "C" || answer == "c") cout << "true\n\n";
+            else cout << "false\nIncorrect. Correct answer: C) Resistance increases\n\n";
 
-        cout << "1. Към коя група принадлежи бензенът?\n";
-        cout << "A) Алкани\nB) Арени\nC) Алкини\n";
-        cout << "Отговор: B\n\n";
+            cout << "4. What happens to resistance at the critical temperature Tk?\n";
+            cout << "A) It increases\nB) It stays the same\nC) It becomes zero\n";
+            cout << "Answer: ";
+            cin >> answer;
+            if (answer == "C" || answer == "c") cout << "true\n\n";
+            else cout << "false\nIncorrect. Correct answer: C) It becomes zero\n\n";
 
-        cout << "2. Какво е делокализация?\n";
-        cout << "A) Разкъсване на връзки\nB) Разпределяне на електроните по целия пръстен\nC) Образуване на нови атоми\n";
-        cout << "Отговор: B\n\n";
+            cout << "5. Where are superconductors used?\n";
+            cout << "A) Microwave ovens\nB) MRI machines\nC) Televisions\n";
+            cout << "Answer: ";
+            cin >> answer;
+            if (answer == "B" || answer == "b") cout << "true\n\n";
+            else cout << "false\nIncorrect. Correct answer: B) MRI machines\n\n";
 
-        cout << "3. Защо бензенът плува върху водата?\n";
-        cout << "A) По-плътен е от водата\nB) По-лек е от водата\nC) Реагира с водата\n";
-        cout << "Отговор: B\n\n";
+            cout << "6. What is special about highвЂ‘temperature superconductors?\n";
+            cout << "A) They work at higher temperature\nB) They do not conduct electricity\nC) They have negative resistance\n";
+            cout << "Answer: ";
+            cin >> answer;
+            if (answer == "A" || answer == "a") cout << "true\n\n";
+            else cout << "false\nIncorrect. Correct answer: A) They work at higher temperature\n\n";
+        }
 
-        cout << "4. Какво уврежда бензенът в организма?\n";
-        cout << "A) Стомаха\nB) Централната нервна система\nC) Кожата\n";
-        cout << "Отговор: B\n\n";
+        // ---------------- CHEMISTRY ----------------
+        if (choice == 2) {
+            cout << "\n=== CHEMISTRY TEST ===\n\n";
 
-        cout << "5. Какви реакции са характерни за бензена?\n";
-        cout << "A) Присъединяване\nB) Заместителни\nC) Разпад\n";
-        cout << "Отговор: B\n\n";
+            cout << "1. To which group does benzene belong?\n";
+            cout << "A) Alkanes\nB) Arenes\nC) Alkynes\n";
+            cout << "Answer: ";
+            cin >> answer;
+            if (answer == "B" || answer == "b") cout << "true\n\n";
+            else cout << "false\nIncorrect. Correct answer: B) Arenes\n\n";
 
-        cout << "6. Какво е толуенът?\n";
-        cout << "A) Алкан\nB) Хомолог на бензена\nC) Алдехид\n";
-        cout << "Отговор: B\n\n";
+            cout << "2. What is delocalization?\n";
+            cout << "A) Breaking of bonds\nB) Distribution of electrons across the ring\nC) Formation of new atoms\n";
+            cout << "Answer: ";
+            cin >> answer;
+            if (answer == "B" || answer == "b") cout << "true\n\n";
+            else cout << "false\nIncorrect. Correct answer: B) Distribution of electrons across the ring\n\n";
 
-        cout << "7. Защо бензенът се добавя към горивата?\n";
-        cout << "A) За да намали цената\nB) За да повиши октановото число\nC) За да промени цвета\n";
-        cout << "Отговор: B\n\n";
+            cout << "3. Why does benzene float on water?\n";
+            cout << "A) It is denser than water\nB) It is lighter than water\nC) It reacts with water\n";
+            cout << "Answer: ";
+            cin >> answer;
+            if (answer == "B" || answer == "b") cout << "true\n\n";
+            else cout << "false\nIncorrect. Correct answer: B) It is lighter than water\n\n";
 
-        // ---------------- БИОЛОГИЯ ----------------
-        cout << "=== БИОЛОГИЯ ===\n\n";
+            cout << "4. What does benzene damage in the human body?\n";
+            cout << "A) Stomach\nB) Central nervous system\nC) Skin\n";
+            cout << "Answer: ";
+            cin >> answer;
+            if (answer == "B" || answer == "b") cout << "true\n\n";
+            else cout << "false\nIncorrect. Correct answer: B) Central nervous system\n\n";
 
-        cout << "1. От колко вида аминокиселини се изграждат белтъците?\n";
-        cout << "A) 5\nB) 10\nC) 20\n";
-        cout << "Отговор: C\n\n";
+            cout << "5. What reactions are typical for benzene?\n";
+            cout << "A) Addition\nB) Substitution\nC) Decomposition\n";
+            cout << "Answer: ";
+            cin >> answer;
+            if (answer == "B" || answer == "b") cout << "true\n\n";
+            else cout << "false\nIncorrect. Correct answer: B) Substitution\n\n";
 
-        cout << "2. Коя връзка свързва аминокиселините?\n";
-        cout << "A) Йонна\nB) Пептидна\nC) Водородна\n";
-        cout << "Отговор: B\n\n";
+            cout << "6. What is toluene?\n";
+            cout << "A) Alkane\nB) Homologue of benzene\nC) Aldehyde\n";
+            cout << "Answer: ";
+            cin >> answer;
+            if (answer == "B" || answer == "b") cout << "true\n\n";
+            else cout << "false\nIncorrect. Correct answer: B) Homologue of benzene\n\n";
 
-        cout << "3. От какво зависи последователността на аминокиселините?\n";
-        cout << "A) От температурата\nB) От ДНК\nC) От храната\n";
-        cout << "Отговор: B\n\n";
+            cout << "7. Why is benzene added to fuels?\n";
+            cout << "A) To lower the price\nB) To increase the octane number\nC) To change the color\n";
+            cout << "Answer: ";
+            cin >> answer;
+            if (answer == "B" || answer == "b") cout << "true\n\n";
+            else cout << "false\nIncorrect. Correct answer: B) To increase the octane number\n\n";
+        }
 
-        cout << "4. Кой е един от типовете вторична структура?\n";
-        cout << "A) Йонна спирала\nB) Алфа-спирала\nC) Глобула\n";
-        cout << "Отговор: B\n\n";
+        // ---------------- BIOLOGY ----------------
+        if (choice == 3) {
+            cout << "\n=== BIOLOGY TEST ===\n\n";
 
-        cout << "5. Какво стабилизира третичната структура?\n";
-        cout << "A) Само пептидни връзки\nB) Само водородни връзки\nC) Дисулфидни, водородни и хидрофобни взаимодействия\n";
-        cout << "Отговор: C\n\n";
+            cout << "1. How many amino acids build proteins?\n";
+            cout << "A) 5\nB) 10\nC) 20\n";
+            cout << "Answer: ";
+            cin >> answer;
+            if (answer == "C" || answer == "c") cout << "true\n\n";
+            else cout << "false\nIncorrect. Correct answer: C) 20\n\n";
 
-        cout << "6. Какво характеризира четвъртичната структура?\n";
-        cout << "A) Една полипептидна верига\nB) Две или повече вериги\nC) Само алфа-спирали\n";
-        cout << "Отговор: B\n\n";
+            cout << "2. Which bond connects amino acids?\n";
+            cout << "A) Ionic\nB) Peptide\nC) Hydrogen\n";
+            cout << "Answer: ";
+            cin >> answer;
+            if (answer == "B" || answer == "b") cout << "true\n\n";
+            else cout << "false\nIncorrect. Correct answer: B) Peptide\n\n";
 
-        cout << "7. Какво е денатурация?\n";
-        cout << "A) Разграждане на ДНК\nB) Разрушаване на пространствената структура на белтъка\nC) Образуване на нов белтък\n";
-        cout << "Отговор: B\n\n";
+            cout << "3. What determines the sequence of amino acids?\n";
+            cout << "A) Temperature\nB) DNA\nC) Food\n";
+            cout << "Answer: ";
+            cin >> answer;
+            if (answer == "B" || answer == "b") cout << "true\n\n";
+            else cout << "false\nIncorrect. Correct answer: B) DNA\n\n";
 
-        cout << "8. Коя функция е свързана с ензимите?\n";
-        cout << "A) Каталитична\nB) Защитна\nC) Енергийна\n";
-        cout << "Отговор: A\n\n";
-        return 0;
+            cout << "4. Which is a type of secondary structure?\n";
+            cout << "A) Ionic helix\nB) Alpha helix\nC) Globule\n";
+            cout << "Answer: ";
+            cin >> answer;
+            if (answer == "B" || answer == "b") cout << "true\n\n";
+            else cout << "false\nIncorrect. Correct answer: B) Alpha helix\n\n";
+
+            cout << "5. What stabilizes tertiary structure?\n";
+            cout << "A) Only peptide bonds\nB) Only hydrogen bonds\nC) Disulfide, hydrogen and hydrophobic interactions\n";
+            cout << "Answer: ";
+            cin >> answer;
+            if (answer == "C" || answer == "c") cout << "true\n\n";
+            else cout << "false\nIncorrect. Correct answer: C) Disulfide, hydrogen and hydrophobic interactions\n\n";
+
+            cout << "6. What characterizes quaternary structure?\n";
+            cout << "A) One polypeptide chain\nB) Two or more chains\nC) Only alpha helices\n";
+            cout << "Answer: ";
+            cin >> answer;
+            if (answer == "B" || answer == "b") cout << "true\n\n";
+            else cout << "false\nIncorrect. Correct answer: B) Two or more chains\n\n";
+
+            cout << "7. What is denaturation?\n";
+            cout << "A) Breakdown of DNA\nB) Destruction of protein structure\nC) Formation of a new protein\n";
+            cout << "Answer: ";
+            cin >> answer;
+            if (answer == "B" || answer == "b") cout << "true\n\n";
+            else cout << "false\nIncorrect. Correct answer: B) Destruction of protein structure\n\n";
+
+            cout << "8. What function is related to enzymes?\n";
+            cout << "A) Catalytic\nB) Protective\nC) Energy\n";
+            cout << "Answer: ";
+            cin >> answer;
+            if (answer == "A" || answer == "a") cout << "true\n\n";
+            else cout << "false\nIncorrect. Correct answer: A) Catalytic\n\n";
+        }
+    }
+
+    return 0;
 }
