@@ -35,7 +35,90 @@ int main() {
         cin >> subChoice;
 
         if (subChoice == 'a' || subChoice == 'A') {
-            cout << "plan" << endl;
+            if (mainChoice == 3) {
+                // Detailed Physics study plan for Plan option
+                cout << "\n";
+                cout << "============================================================================\n";
+                cout << "               PHYSICS STUDY PLAN: ELECTRIC CURRENT                        \n";
+                cout << "                    & SUPERCONDUCTIVITY                                     \n";
+                cout << "============================================================================\n\n";
+
+                cout << "----------------------------------------------------------------------------\n";
+                cout << " 1. DRIFT VELOCITY                                                          \n";
+                cout << "----------------------------------------------------------------------------\n";
+                cout << "   Definition: The average velocity attained by charged particles\n";
+                cout << "   (electrons) in a material due to an electric field.\n\n";
+                cout << "   Key Point: It is DIRECTED MOVEMENT of electrons\n";
+                cout << "   (not random motion)\n";
+                cout << "   * Random motion = thermal motion (happens even without field)\n";
+                cout << "   * Drift velocity = net movement in one direction when field applied\n\n";
+
+                cout << "----------------------------------------------------------------------------\n";
+                cout << " 2. TEMPERATURE & RESISTANCE IN METALS                                      \n";
+                cout << "----------------------------------------------------------------------------\n\n";
+
+                cout << "   Why resistance increases when metals are heated:\n";
+                cout << "   * IONS VIBRATE MORE STRONGLY at higher temperatures\n";
+                cout << "   * Increased vibration = more collisions for flowing electrons\n";
+                cout << "   * More collisions = higher resistance\n\n";
+
+                cout << "   What DOES NOT happen:\n";
+                cout << "   * Number of electrons does NOT decrease significantly\n";
+                cout << "   * The metal does NOT cool down (it heats up)\n\n";
+
+                cout << "   Specific resistance (resistivity) and temperature:\n";
+                cout << "   * When specific resistance increases with temperature -> \n";
+                cout << "     RESISTANCE INCREASES (normal for most conductors)\n\n";
+
+                cout << "----------------------------------------------------------------------------\n";
+                cout << " 3. SUPERCONDUCTIVITY                                                       \n";
+                cout << "----------------------------------------------------------------------------\n\n";
+
+                cout << "   Critical Temperature (Tk):\n";
+                cout << "   * At this special temperature, resistance BECOMES ZERO\n";
+                cout << "   * Below Tk: Superconducting state (zero resistance)\n";
+                cout << "   * Above Tk: Normal conducting state\n\n";
+
+                cout << "   Applications of Superconductors:\n";
+                cout << "   * MRI MACHINES (Magnetic Resonance Imaging) [YES]\n";
+                cout << "   * Particle accelerators\n";
+                cout << "   * Magnetic levitation trains\n";
+                cout << "   * Power cables (lossless transmission)\n\n";
+
+                cout << "   NOT typically used in:\n";
+                cout << "   * Microwave ovens [NO]\n";
+                cout << "   * Televisions (conventional) [NO]\n\n";
+
+                cout << "----------------------------------------------------------------------------\n";
+                cout << " 4. HIGH-TEMPERATURE SUPERCONDUCTORS                                        \n";
+                cout << "----------------------------------------------------------------------------\n\n";
+
+                cout << "   What makes them \"special\":\n";
+                cout << "   * They WORK AT HIGHER TEMPERATURES than conventional SC\n";
+                cout << "   * \"High-temperature\" is relative (still cold, but less extreme)\n";
+                cout << "   * Discovered in 1980s (ceramic materials)\n";
+                cout << "   * Can operate above liquid nitrogen temperature (77K / -196C)\n\n";
+
+                cout << "   Key advantage:\n";
+                cout << "   * Easier and cheaper to cool\n";
+                cout << "   * More practical for real-world applications\n\n";
+
+                cout << "----------------------------------------------------------------------------\n";
+                cout << "                    QUICK REFERENCE TABLE                                   \n";
+                cout << "----------------------------------------------------------------------------\n";
+                cout << " Concept                         | Key Characteristic                       \n";
+                cout << "---------------------------------+------------------------------------------\n";
+                cout << " Drift velocity                  | Directed movement of electrons           \n";
+                cout << " Resistance in heated metals     | Ions vibrate more strongly               \n";
+                cout << " Specific resistance up with temp| Resistance increases                     \n";
+                cout << " At critical temperature (Tk)    | Resistance becomes zero                  \n";
+                cout << " Superconductor application      | MRI machines                             \n";
+                cout << " High-temp superconductors       | Work at higher temperature               \n";
+                cout << "----------------------------------------------------------------------------\n\n";
+            }
+            else {
+                cout << "plan" << endl;
+            }
         }
         else if (subChoice == 'b' || subChoice == 'B') {
             cout << "You selected option b." << endl;
@@ -60,6 +143,88 @@ int main() {
         if (mainChoice == 1) choice = 3;
         else if (mainChoice == 2) choice = 2;
         else /* mainChoice == 3 */ choice = 1;
+
+        // If the user selected Physics in the main menu and chose Test, print the study plan
+        if (mainChoice == 3) {
+            cout << "\n";
+            cout << "============================================================================\n";
+            cout << "               PHYSICS STUDY PLAN: ELECTRIC CURRENT                        \n";
+            cout << "                    & SUPERCONDUCTIVITY                                     \n";
+            cout << "============================================================================\n\n";
+
+            cout << "----------------------------------------------------------------------------\n";
+            cout << " 1. DRIFT VELOCITY                                                          \n";
+            cout << "----------------------------------------------------------------------------\n";
+            cout << "   Definition: The average velocity attained by charged particles\n";
+            cout << "   (electrons) in a material due to an electric field.\n\n";
+            cout << "   Key Point: It is DIRECTED MOVEMENT of electrons\n";
+            cout << "   (not random motion)\n";
+            cout << "   * Random motion = thermal motion (happens even without field)\n";
+            cout << "   * Drift velocity = net movement in one direction when field applied\n\n";
+
+            cout << "----------------------------------------------------------------------------\n";
+            cout << " 2. TEMPERATURE & RESISTANCE IN METALS                                      \n";
+            cout << "----------------------------------------------------------------------------\n\n";
+
+            cout << "   Why resistance increases when metals are heated:\n";
+            cout << "   * IONS VIBRATE MORE STRONGLY at higher temperatures\n";
+            cout << "   * Increased vibration = more collisions for flowing electrons\n";
+            cout << "   * More collisions = higher resistance\n\n";
+
+            cout << "   What DOES NOT happen:\n";
+            cout << "   * Number of electrons does NOT decrease significantly\n";
+            cout << "   * The metal does NOT cool down (it heats up)\n\n";
+
+            cout << "   Specific resistance (resistivity) and temperature:\n";
+            cout << "   * When specific resistance increases with temperature -> \n";
+            cout << "     RESISTANCE INCREASES (normal for most conductors)\n\n";
+
+            cout << "----------------------------------------------------------------------------\n";
+            cout << " 3. SUPERCONDUCTIVITY                                                       \n";
+            cout << "----------------------------------------------------------------------------\n\n";
+
+            cout << "   Critical Temperature (Tk):\n";
+            cout << "   * At this special temperature, resistance BECOMES ZERO\n";
+            cout << "   * Below Tk: Superconducting state (zero resistance)\n";
+            cout << "   * Above Tk: Normal conducting state\n\n";
+
+            cout << "   Applications of Superconductors:\n";
+            cout << "   * MRI MACHINES (Magnetic Resonance Imaging) [YES]\n";
+            cout << "   * Particle accelerators\n";
+            cout << "   * Magnetic levitation trains\n";
+            cout << "   * Power cables (lossless transmission)\n\n";
+
+            cout << "   NOT typically used in:\n";
+            cout << "   * Microwave ovens [NO]\n";
+            cout << "   * Televisions (conventional) [NO]\n\n";
+
+            cout << "----------------------------------------------------------------------------\n";
+            cout << " 4. HIGH-TEMPERATURE SUPERCONDUCTORS                                        \n";
+            cout << "----------------------------------------------------------------------------\n\n";
+
+            cout << "   What makes them \"special\":\n";
+            cout << "   * They WORK AT HIGHER TEMPERATURES than conventional SC\n";
+            cout << "   * \"High-temperature\" is relative (still cold, but less extreme)\n";
+            cout << "   * Discovered in 1980s (ceramic materials)\n";
+            cout << "   * Can operate above liquid nitrogen temperature (77K / -196C)\n\n";
+
+            cout << "   Key advantage:\n";
+            cout << "   * Easier and cheaper to cool\n";
+            cout << "   * More practical for real-world applications\n\n";
+
+            cout << "----------------------------------------------------------------------------\n";
+            cout << "                    QUICK REFERENCE TABLE                                   \n";
+            cout << "----------------------------------------------------------------------------\n";
+            cout << " Concept                         | Key Characteristic                       \n";
+            cout << "---------------------------------+------------------------------------------\n";
+            cout << " Drift velocity                  | Directed movement of electrons           \n";
+            cout << " Resistance in heated metals     | Ions vibrate more strongly               \n";
+            cout << " Specific resistance up with temp| Resistance increases                     \n";
+            cout << " At critical temperature (Tk)    | Resistance becomes zero                  \n";
+            cout << " Superconductor application      | MRI machines                             \n";
+            cout << " High-temp superconductors       | Work at higher temperature               \n";
+            cout << "----------------------------------------------------------------------------\n\n";
+        }
     }
 
     while (true) {
