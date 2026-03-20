@@ -1,0 +1,10 @@
+Subject|Category|Weight
+Biology|Cells|1.0
+Biology|Genetics|1.2
+Biology|Evolution|1.1
+Chemistry|Elements|1.0
+Chemistry|Reactions|1.3
+Chemistry|Bonding|1.1
+Physics|Motion|1.0
+Physics|Forces|1.2
+Physics|Energy|1.1

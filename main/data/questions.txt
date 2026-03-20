@@ -1,0 +1,66 @@
+ID|Subject|Category|Question|OptionA|OptionB|OptionC|OptionD|CorrectAnswer
+1|Biology|Cells|What is the powerhouse of the cell?|Nucleus|Mitochondria|Ribosome|Chloroplast|B
+2|Biology|Cells|Cell membrane is composed of:|Proteins|Carbohydrates|Lipids|All of above|D
+3|Biology|Cells|Which organelle is responsible for protein synthesis?|Ribosome|Nucleolus|Golgi Apparatus|Lysosome|A
+4|Biology|Cells|What is the gel-like substance inside the cell?|Cytoplasm|Nucleus|Vacuole|Chloroplast|A
+5|Biology|Cells|Which type of cell has a nucleus?|Prokaryotic|Eukaryotic|Both|Neither|B
+6|Biology|Genetics|DNA stands for?|Deoxyribonucleic Acid|Deoxyribose Nucleic Acid|Neither|Both|A
+7|Biology|Genetics|How many chromosomes do humans have?|23|46|48|52|B
+8|Biology|Genetics|What is the process of DNA copying called?|Replication|Transcription|Translation|Mutation|A
+9|Biology|Genetics|Which scientists discovered the structure of DNA?|Darwin and Huxley|Watson and Crick|Mendel and Darwin|Lamarck and Cuvier|B
+10|Biology|Genetics|What is a mutation?|A permanent change in DNA|A temporary change|Cell division|Protein synthesis|A
+11|Biology|Evolution|Evolution is best described as?|Random change|Change with purpose|Change over time|Static state|C
+12|Biology|Evolution|The process of natural selection favors:|Weak organisms|Adapted organisms|All organisms equally|Mutations|B
+13|Biology|Evolution|What is the evidence for evolution?|Fossils|DNA similarities|Vestigial structures|All of above|D
+14|Biology|Evolution|Which theory proposed survival of the fittest?|Lamarck|Darwin|Wallace|Cuvier|B
+15|Biology|Evolution|Homologous structures indicate:|Different origins|Common ancestry|Different functions|Evolution cannot occur|B
+16|Chemistry|Elements|How many elements are in the periodic table?|Around 100|Around 118|Around 150|Around 200|B
+17|Chemistry|Elements|What is the lightest element?|Helium|Hydrogen|Lithium|Oxygen|B
+18|Chemistry|Elements|Noble gases are known for:|High reactivity|Low reactivity|High density|Low density|B
+19|Chemistry|Elements|The atomic number represents:|Number of neutrons|Number of electrons|Number of protons|Atomic mass|C
+20|Chemistry|Elements|Which element is a non-metal?|Iron|Gold|Carbon|Copper|C
+21|Chemistry|Reactions|A chemical reaction occurs when:|Matter changes form|Bonds break and form|Energy is exchanged|All of above|D
+22|Chemistry|Reactions|Exothermic reactions:|Release energy|Absorb energy|Neither|Can be both|A
+23|Chemistry|Reactions|The law of conservation of mass states:|Energy creation|Matter cannot be created/destroyed|All atoms bond|Elements change|B
+24|Chemistry|Reactions|What does a catalyst do in reactions?|Creates energy|Speeds up reactions|Slows down reactions|Stops reactions|B
+25|Chemistry|Reactions|Combustion is a type of:|Decomposition|Synthesis|Oxidation|Reduction|C
+26|Chemistry|Bonding|Covalent bonds form between:|Metals and non-metals|Two non-metals|Ions|All atoms|B
+27|Chemistry|Bonding|Ionic bonds are formed between:|Two atoms|Metal and non-metal|Two metals|Atoms and molecules|B
+28|Chemistry|Bonding|Hydrogen bonding occurs in:|All molecules|Polar molecules|Only water|Non-polar molecules|B
+29|Chemistry|Bonding|Electronegativity measures:|Atomic size|Attraction to electrons|Number of bonds|Reaction rate|B
+30|Chemistry|Bonding|Which bond is the strongest?|Covalent|Ionic|Hydrogen|Van der Waals|A
+31|Physics|Motion|Velocity is different from speed because:|No difference|Velocity has direction|Speed is faster|Velocity changes|B
+32|Physics|Motion|Acceleration is defined as:|Change in speed|Change in velocity|Rate of position change|Final speed|B
+33|Physics|Motion|A body in motion stays in motion unless:|It is pushed|External force acts|It slows down|It reaches a wall|B
+34|Physics|Motion|Which has greater inertia?|Feather|Bowling ball|Air|Water|B
+35|Physics|Motion|Displacement differs from distance because:|No difference|Displacement is vector|Distance is longer|Displacement is scalar|B
+36|Physics|Forces|Force is measured in:|Kilograms|Meters|Newtons|Speed|C
+37|Physics|Forces|Newton's second law states:|F equals mass|F equals acceleration|F equals MA|Force is zero|C
+38|Physics|Forces|Friction acts in direction:|Forward|Backward|Sideways|Upward|B
+39|Physics|Forces|The normal force on an object on a table is:|Always equal to weight|More than weight|Less than weight|Depends on friction|A
+40|Physics|Forces|Weight is due to:|Air pressure|Gravity|Mass|Density|B
+41|Physics|Energy|Kinetic energy depends on:|Height|Velocity|Temperature|Pressure|B
+42|Physics|Energy|Potential energy increases when:|Speed increases|Height increases|Temperature increases|Density increases|B
+43|Physics|Energy|Energy conservation states:|Energy is destroyed|Energy is created|Total energy remains constant|Energy can disappear|C
+44|Physics|Energy|Power is defined as:|Force times distance|Energy per time|Work done|Velocity times mass|B
+45|Physics|Energy|Which is not a form of energy?|Heat|Light|Sound|Distance|D
+46|Biology|Cells|Which organelle stores water and nutrients in plant cells?|Nucleus|Vacuole|Mitochondria|Golgi|B
+47|Biology|Cells|The endoplasmic reticulum without ribosomes is called:|Rough ER|Smooth ER|Golgi ER|Transport ER|B
+48|Biology|Genetics|Alleles are:|Versions of genes|Types of DNA|Chromosomes|Proteins|A
+49|Biology|Genetics|A dominant trait will appear if:|Present in both alleles|Present in one allele|Never appears|Always recessive|B
+50|Biology|Genetics|Cross-breeding two organisms produces:|Clones|Hybrids|Mutations|New species|B
+51|Biology|Evolution|Vestigial structures are:|Actively used|No longer functional|Future adaptations|Harmful organs|B
+52|Biology|Evolution|The fossil record provides evidence of:|Current organisms|Past life forms|Future evolution|Species stability|B
+53|Chemistry|Elements|What is the symbol for Gold?|Go|Gd|Au|Gl|C
+54|Chemistry|Elements|Alkali metals are located in:|Group 1|Group 2|Group 17|Group 18|A
+55|Chemistry|Elements|Halogens are known for:|Being reactive|Being stable|High atomic mass|Low reactivity|A
+56|Chemistry|Reactions|In a neutralization reaction:|Acid and base react|Base and salt react|Acid and alcohol react|Water and acid react|A
+57|Chemistry|Reactions|The pH scale ranges from:|0-7|0-14|1-14|0-10|B
+58|Chemistry|Reactions|Decomposition reactions break down:|Products into reactants|Complex molecules|Single atoms|Bonds only|B
+59|Chemistry|Bonding|Van der Waals forces are:|Strong and permanent|Weak intermolecular forces|Chemical bonds|Ionic bonds|B
+60|Physics|Motion|An object moving in a circle at constant speed has:|No acceleration|Centripetal acceleration|Linear motion|Is at rest|B
+61|Physics|Motion|Relative velocity depends on:|Observer position|Object mass|Temperature|Color|A
+62|Physics|Forces|Static friction prevents:|Movement starting|Movement continuing|Acceleration|Velocity|A
+63|Physics|Forces|Tension in a rope is:|Equal throughout|Varies with position|Zero at ends|Depends on color|A
+64|Physics|Energy|Elastic potential energy is stored in:|Moving objects|Stretched objects|Heat energy|Light|B
+65|Physics|Energy|Efficiency of a machine is measured by:|Work input divided by output|Work output divided by input|Mass times acceleration|Force times distance|B

@@ -13,10 +13,78 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{a1b2c3d4-e5f6-7890-abcd-ef1234567890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{b2c3d4e5-f678-9012-bcde-f23456789012}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{c3d4e5f6-7890-1234-cdef-345678901234}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
+    <!-- Source files from src folder -->
+    <ClCompile Include="src\auth.cpp">
+      <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\file_manager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\questions.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\statistics.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\subjects.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+
+    <!-- Header files from include folder -->
+    <ClInclude Include="include\auth.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\file_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\questions.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\statistics.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\subjects.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tests.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils.h">
+      <Filter>include</Filter>
+    </ClInclude>
+
+    <!-- Data files to show in solution explorer -->
+    <None Include="data\categories.txt">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\questions.txt">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\results.txt">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\users.txt">
+      <Filter>data</Filter>
+    </None>
   </ItemGroup>
 </Project>

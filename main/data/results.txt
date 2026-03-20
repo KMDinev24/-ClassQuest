@@ -1,0 +1,2 @@
+Mitko|Biology|0|100|0|2|0|20
+maikul|Biology|65|100|65|4|13|20
